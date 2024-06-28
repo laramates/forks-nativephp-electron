@@ -30,7 +30,7 @@
     "@electron-toolkit/preload": "^1.0.3",
     "@electron-toolkit/utils": "^1.0.2",
     "@electron/remote": "^2.0.9",
-    "@nativephp/electron-plugin": "^0.3.1",
+    "@nativephp/electron-plugin": "file:../nativephp-electron-plugin",
     "yauzl": "^3.1.3"
   },
   "devDependencies": {
