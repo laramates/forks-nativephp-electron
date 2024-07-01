@@ -10,7 +10,12 @@ export default defineConfig({
                     {
                         name: 'watch-external',
                         buildStart(){
-                            this.addWatchFile(join(process.env.APP_PATH, 'app', 'Providers', 'NativeAppServiceProvider.php'))
+                            this.addWatchFile(join(process.env.APP_PATH, 'app', 'Providers', 'NativeAppServiceProvider.php'));
+                            this.addWatchFile(join(process.env.APP_PATH, 'forks', 'nativephp-electron', 'resources', 'js', 'build'));
+                            this.addWatchFile(join(process.env.APP_PATH, 'forks', 'nativephp-electron', 'resources', 'js', 'resources'));
+                            this.addWatchFile(join(process.env.APP_PATH, 'forks', 'nativephp-electron', 'resources', 'js', 'src'));
+                            this.addWatchFile(join(process.env.APP_PATH, 'forks', 'nativephp-electron-plugin', 'dist'));
+                            this.addWatchFile(join(process.env.APP_PATH, 'forks', 'nativephp-laravel', 'src'));
                         }
                     }
                 ]
